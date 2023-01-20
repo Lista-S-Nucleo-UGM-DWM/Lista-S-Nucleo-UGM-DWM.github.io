@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(img/background.jpg);
+    border: 8px solid #CB7BED;
+    border-bottom: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 5px solid #ABE086;
+    padding: 20px;
+}
+
+nav .logo_jdm {
+    width: 150px;
+}
+
+nav .menu {
+    width: 50%;
+}
+
+footer {
+    height: 50px;
+    background: #CB7BED;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+a:hover {
+    transition: 1s;
+    color: #CB7BED;
+}
+
+.logo_jdm {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    border-top: 8px solid #CB7BED;
+    margin: 0 10px;
+}
+
+.wrapper .title {
+    padding-top: 10px;
+}
+
+.wrapper {
+    border-top: 3px solid #ABE086;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper_homepage {
+    border-top: 3px solid #ABE086;
+}
+
+.buttons_somos {
+    display: flex;
+}
+
+.buttons_somos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons_somos img {
+    width: 50%;
+}
+
+.membros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.objetivos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.membros img, .objetivos img {
+    width: 230px;
+}
+
+.first_wrapper {
+    display: flex;
+    padding: 100px;
+    padding-bottom: 0;
+}
+
+.homepage {
+    width: 60%;
+}
+
+.joystick {
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.joystick img {
+    width: 400px;
+}
+
+.homepage img {
+    width: -webkit-fill-available;
+    max-width: 600px;
+}
+
+.second_wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.second_wrapper img {
+    width: -webkit-fill-available;
+    max-width: 600px;
+}
+
+.quemsomos_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quemsomos_wrapper img {
+    width: 40%;
+}
+
+#image1 {
+    margin-right: 90px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+@media only screen and (max-width: 1300px) {
+    .first_wrapper {
+        display: block;
+        padding: 0;
+        padding-top: 30px;
+    }
+
+    .homepage {
+        width: auto;
+    }
+
+    .joystick {
+        width: auto;
+    }
+
+    .joystick img {
+        width: 300px;
+    }
+
+    .second_wrapper {
+        display: block;
+    }
+
+    .wrapper .title {
+        width: 50%;
+    }
+
+    .quemsomos_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quemsomos_wrapper img {
+        width: 80%;
+    }
+
+    .buttons_somos img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .menu {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .menu a {
+        padding: 10px;
+    }
+
+    .objetivos_wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .logo_jdm a {
+        display: flex;
+        justify-content: center;
+    }
+}
